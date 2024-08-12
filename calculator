@@ -1,0 +1,49 @@
+const prompt = require("prompt-sync")();
+
+
+
+
+let choice = prompt("CHOOSE THE NUMBER \n1. Addition \n2. Subtraction\n 3. Multiplication\n 4. Division\n 5. Root\n");
+switch (choice) {
+    case '1':
+        let a = parseFloat(prompt("Enter The value of a : "));
+        let b = parseFloat(prompt("Enter The value of a : "));
+        let c  = a + b;
+        console.log(c);
+        break;
+    case '2':
+        let d = parseFloat(prompt("Enter the value of b : "));
+        let e = parseFloat(prompt("Enter the value of e : "));
+        console.log(d-e);
+        break;
+    case '3':
+        let f = parseFloat(prompt("Enter the value of f :"));
+        let g =parseFloat(prompt("Enter the value of g :"));
+        console.log(f*g);
+        break;
+    case '4':
+        let h = parseFloat(prompt("Enter the value of h :"));
+        let i = parseFloat(prompt("Enter the value of i  :"));
+        if (i!==0) {
+            let z = h/i;
+            console.log("Result: "+ z);
+
+        }
+        else{
+            console.log("cannot divided by 0");
+        }
+        break;
+        case '5':
+            let j = parseFloat(prompt("Enter the value of j :"));
+            if (j>0) {
+                let l = j*j;
+                console.log("Result :" + l);
+            }
+            else{
+                console.log("Enter positive integers");
+                
+            }
+            break;
+        default:
+            console.log("Invalid Input");
+}
